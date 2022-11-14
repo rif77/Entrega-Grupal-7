@@ -10,7 +10,6 @@
 </head>
 
 <body>
-
     <main class="container">
         <div class="row">
             <div class="col-12 text-center my-3">
@@ -43,7 +42,7 @@
                             <h6>Modificar registro</h6>
                             <input type="number" id="inputPutId" class="form-control"
                                 placeholder="ID del registro a modificar">
-                            <button id="btnPut" class="btn btn-warning position-absolute bottom-0 mb-3" disabled>
+                            <button id="btnPut" class="btn btn-warning position-absolute bottom-0 mb-3" data-bs-toggle="modal" data-bs-target="#dataModal" disabled>
                                 Modificar</button>
                         </div>
                     </div>
@@ -63,8 +62,7 @@
         </div>
     </main>
     <footer class="my-5 pt-5 text-muted text-center text-small">
-        <p class="mb-1">Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jovenes a
-                Programar</a> - 2022</p>
+        <p class="mb-1">Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jovenes a Programar</a> - 2022</p>
         <p class="mb-1">Generado con fines estrictamente educativos.</p>
     </footer>
     <div class="alert alert-danger fade" id="alert-error" role="alert">
@@ -81,7 +79,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-primary" id="btnSendChanges" disabled>Guardar</button>
+                    <button type="button" class="btn btn-primary" id="btnSendChanges">Guardar</button>
                 </div>
             </div>
         </div>
